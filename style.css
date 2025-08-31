@@ -71,6 +71,10 @@ body {
   margin-bottom: 12px;
 }
 
+.card-title:hover {
+  color: var(--accent-color);
+}
+
 .card-description {
   margin-bottom: 24px;
 
