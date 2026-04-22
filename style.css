@@ -1,0 +1,134 @@
+:root {
+  --yellow: #f4d04e;
+  --grey950: #111111;
+  --grey500: #6b6b6b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: FigtreeExtraBold;
+  src: url(blog-preview-card-main/assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+@font-face {
+  font-family: FigtreeMedium;
+  src: url(blog-preview-card-main/assets/fonts/static/Figtree-Medium.ttf);
+}
+
+body {
+  margin: 0;
+  background-color: var(--yellow);
+  font-family: "FigtreeMedium", sans-serif;
+  color: var(--grey500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  max-width: 384px;
+
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 1.5rem;
+
+  box-shadow: 8px 8px 0 black;
+  border: 1px solid var(--grey950);
+
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.card-content {
+  margin-block: 1.5rem;
+}
+
+.card-content > * {
+  margin-top: 0.75rem;
+}
+
+.card-learning {
+  margin-top: 1.5rem;
+  background-color: var(--yellow);
+  color: var(--grey950);
+  width: 25%;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-family: "FigtreeExtraBold", sans-serif;
+  font-weight: 700;
+}
+
+.card-published {
+  color: var(--grey950);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.cart-title {
+  font-family: "FigtreeExtraBold", sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--grey950);
+  transition: all 1s ease;
+}
+
+.cart-title:hover {
+  cursor: pointer;
+  color: var(--yellow);
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card-author {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--grey950);
+  font-weight: 700;
+}
+
+.card-author img {
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    max-width: 327px;
+  }
+
+  .card-learning {
+    font-size: 0.75rem;
+  }
+
+  .card-published {
+    font-size: 0.75rem;
+  }
+
+  .cart-title {
+    font-size: 1.25rem;
+  }
+
+  .card-text {
+    font-size: 0.875rem;
+  }
+}
