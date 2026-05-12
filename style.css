@@ -28,6 +28,15 @@ body {
   min-height: 100vh;
 }
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100vh;
+}
+
 .card {
   max-width: 24rem;
 
