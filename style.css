@@ -38,6 +38,7 @@ main {
 }
 
 .card {
+  position: relative;
   max-width: 24rem;
 
   border-radius: 10px;
@@ -69,7 +70,6 @@ main {
   padding: 4px 12px;
   border-radius: 4px;
   font-size: 0.875rem;
-  line-height: 1.5;
   font-family: "FigtreeExtraBold", sans-serif;
   font-weight: 700;
 }
@@ -86,11 +86,6 @@ main {
   font-size: 1.5rem;
   color: var(--grey950);
   transition: all 0.2s ease;
-}
-
-.cart-title:hover {
-  cursor: pointer;
-  color: var(--yellow);
 }
 
 .card-text {
@@ -110,6 +105,17 @@ main {
 .card-author img {
   width: 32px;
   height: 32px;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.card:focus-within {
+  cursor: pointer;
+  color: var(--yellow);
 }
 
 @media screen and (max-width: 25px) {
