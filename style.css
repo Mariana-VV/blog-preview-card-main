@@ -24,14 +24,12 @@ body {
   background-color: var(--yellow);
   font-family: "FigtreeMedium", sans-serif;
   color: var(--grey500);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   min-height: 100vh;
 }
 
 .card {
-  max-width: 384px;
+  max-width: 24rem;
 
   border-radius: 10px;
   background-color: #fff;
@@ -105,9 +103,9 @@ body {
   height: 32px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 25px) {
   .card {
-    max-width: 327px;
+    max-width: 20.44rem;
   }
 
   .card-learning {
